@@ -5,7 +5,7 @@ import styles from '~/styles/note-details.css';
 
 export default function NoteDetailsPage() {
   const note = useLoaderData();
-
+console.log('detail page')
   return (
     <main id="note-details">
       <header>

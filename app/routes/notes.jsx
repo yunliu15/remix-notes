@@ -6,10 +6,11 @@ import { Link,
 
 import NewNote, {links as newNoteLinks} from "~/components/NewNote";
 import NoteList, {links as noteListLinks} from "~/components/NoteList";
-import { getStoredNotes, storeNotes } from "../../data/notes";
+import { getStoredNotes, storeNotes } from "~/data/notes";
 
 const NotesPage = () => {
-    const notes = useLoaderData()
+    const notes = useLoaderData();
+    console.log('notes page')
     return ( 
         <main>
             <NewNote />
